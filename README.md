@@ -1,1 +1,1 @@
-# Vibe-Matcher-smart-contract
+# Vibe Matcher Smart Contract
