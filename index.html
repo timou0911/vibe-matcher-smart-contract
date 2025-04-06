@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC20 Token Interface</title>
+</head>
+<body>
+    <div class="container">
+        <section class="wallet-connection">
+            <button id="connectButton">Connect Wallet</button>
+        </section>
+
+        <section class="registration">
+            <button id="registerButton">Register</button>
+            <div>
+                <input type="text" id="checkRegisterAddress" placeholder="Address to check">
+                <button id="checkRegisterButton">Check Registration</button>
+                <div id="registerResult"></div>
+            </div>
+        </section>
+
+        <section class="token-actions">
+            <div class="approve-section">
+                <h3>Approve Tokens</h3>
+                <input type="text" id="approveAddress" placeholder="Spender Address">
+                <input type="text" id="approveAmount" placeholder="Amount">
+                <button id="approveButton">Approve</button>
+            </div>
+
+            <div class="transfer-section">
+                <h3>Transfer Tokens</h3>
+                <input type="text" id="transferAddress" placeholder="Recipient Address">
+                <input type="text" id="transferAmount" placeholder="Amount">
+                <button id="transferButton">Transfer</button>
+            </div>
+
+            <div class="burn-section">
+                <h3>Burn Tokens</h3>
+                <input type="text" id="burnAmount" placeholder="Amount to burn">
+                <button id="burnButton">Burn</button>
+            </div>
+
+            <div class="balance-section">
+                <h3>Check Balance</h3>
+                <input type="text" id="balanceAddress" placeholder="Address to check">
+                <button id="balanceButton">Check Balance</button>
+                <div id="balanceResult"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.ts"></script>
+</body>
+</html>
